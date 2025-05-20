@@ -14,7 +14,7 @@ class _ResultState extends State<Result> {
   Future<Map<String, dynamic>> getdatafromAPI() async {
     final response = await http.get(
       Uri.parse(
-        "https://api.openweathermap.org/data/2.5/weather?q=${widget.place}&APPID=a79c60f626a4baab0cb0aed4d2828da0&units=metric",
+        "https://api.openweathermap.org/data/2.5/weather?q=${widget.place}&APPID=281f4ef5e7a9d9af3152b2310585d3fa&units=metric",
       ),
     );
     if (response.statusCode == 200) {
